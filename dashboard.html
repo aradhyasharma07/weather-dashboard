@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body id="body">
+
+<div class="header">
+    <h1>🌤 Weather Dashboard</h1>
+
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<div class="search">
+
+    <input type="text" id="city" placeholder="Enter City Name">
+
+    <button onclick="getWeather()">Search</button>
+
+</div>
+
+<div class="weather-card">
+
+    <h2 id="cityName">City Name</h2>
+
+    <p id="date">Date</p>
+
+    <img id="icon" src="">
+
+    <h1 id="temperature">--°C</h1>
+
+    <h3 id="condition">Weather Condition</h3>
+
+    <div class="details">
+
+        <div class="box">
+            <h3>Humidity</h3>
+            <p id="humidity">--%</p>
+        </div>
+
+        <div class="box">
+            <h3>Wind</h3>
+            <p id="wind">-- km/h</p>
+        </div>
+
+    </div>
+
+</div>
+
+<h2 class="forecast-title">3 Day Forecast</h2>
+
+<div id="forecast"></div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
