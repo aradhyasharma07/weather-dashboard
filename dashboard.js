@@ -8,7 +8,7 @@ function getWeather()
         return;
     }
 
-    var api="https://api.weatherapi.com/v1/forecast.json?key=b146a6f943e747fdac643211260107&q="+city+"&days=3&aqi=no&alerts=no";
+    var api="https://api.weatherapi.com/v1/forecast.json?key=a5fbba0ee9e4454e90250030260107&q="+city+"&days=3&aqi=no&alerts=no";
 
     fetch(api)
 
